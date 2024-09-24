@@ -1,14 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-5</title>
+    <!-- Tailwind Setup -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Daisy UI setup -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!--Font setup -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                'primary-color' : 'rgb(180, 244, 97)',
+              },
+            },
+          },
+        };
+      </script>
 </head>
-<body>
-    
 
+<style>
+    .lexend_font {
+  font-family: "Lexend", sans-serif;
+ }
 
+</style>
+<body class="lexend_font">
+
+    <header class="sticky top-0 bg-black bg-opacity-50 backdrop-blur-sm shadow-lg">
+        <nav class="flex place-content-around my-4">
+
+            <button id="btn-blog" class="bg-primary-color px-4 rounded-md">
+                Blog
+            </button>
+
+            <div class="flex gap-x-2">
+                <img class="h-8 w-8" src="./assets/logo.png" alt="">
+                <p class="my-2">Donate Bangladesh</p>
+            </div>
+
+            <div class="flex gap-x-2">
+                <img class="h-8" src="./assets/coin.png" alt="">
+                <p class="my-1">5500 </p><span class="my-1">BDT</span>
+            </div>
+        </nav>
+
+        <div class="flex justify-center my-16 gap-x-4">
+            <button class="bg-primary-color px-4 py-2 rounded-md">Donation</button>
+            <button class="border-2 px-4 py-2 rounded-md">History</button>
+        </div>
+    </header>
+    <!-- End of header section -->
+
+    <main>
+
+        
+    </main>
+
+    <footer></footer>
 
 
 
