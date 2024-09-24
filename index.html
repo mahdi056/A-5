@@ -35,7 +35,7 @@
 </style>
 <body class="lexend_font">
 
-    <header class="sticky top-0 bg-black bg-opacity-60 backdrop-blur-sm shadow-lg">
+    <header class="sticky top-0 bg-white bg-opacity-60 backdrop-blur-sm shadow-lg">
         <nav class="flex place-content-around my-4">
 
             <button onclick="window.location.href = 'Blog.html' " id="btn-blog" class="bg-primary-color px-4 rounded-md">
@@ -44,7 +44,7 @@
 
             <div class="flex gap-x-2">
                 <img class="h-8 w-8" src="./assets/logo.png" alt="">
-                <p class="my-2">Donate Bangladesh</p>
+                <p class="hidden my-2 lg:block">Donate Bangladesh</p>
             </div>
 
             <div class="flex gap-x-2">
@@ -71,6 +71,28 @@
     </div>
 
     <main id="show-donation">
+
+        <!-- Create Modal  -->
+
+        <div id="modal" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex justify-center items-center hidden">
+
+            <div class="bg-white p-6 rounded-lg shadow-lg text-center max-w-md">
+
+                <h2 class="text-3xl font-bold mb-4">Congrates!</h2>
+
+                <img class="mx-auto mb-4 w-12 h-12"  src="./assets/coin.png" alt="">
+
+                <p class="text-sm mb-2">You Have Donated for Humankind</p>
+                <p class="text-xl font-bold">Successfully</p>
+        
+               
+                <button id="close-modal-btn" class="bg-gray-200 btn btn-ghost"bg-gray-300 text-black py-1 px-2 rounded mt-4">
+                    Close confirmation
+                </button>
+
+            </div>
+
+        </div>
 
         <!-- !st card start -->
         <section>
