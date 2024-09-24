@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme = "light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog page</title>
+
+      <!-- Tailwind Setup -->
+      <script src="https://cdn.tailwindcss.com"></script>
+      <!-- Daisy UI setup -->
+      <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+      <script src="https://cdn.tailwindcss.com"></script>
+  
+      <!--Font setup -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+      <script>
+          tailwind.config = {
+            theme: {
+              extend: {
+                colors: {
+                  'primary-color' : 'rgb(180, 244, 97)',
+                },
+              },
+            },
+          };
+        </script>
+        <!-- Font awesome setup -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+    .lexend_font {
+  font-family: "Lexend", sans-serif;
+ }
+
+</style>
+<body class="lexend_font">
+
+    <header>
+        <nav class="flex place-content-around my-4">
+
+            <button onclick="window.location.href = 'index.html' " id="btn-blog" class="bg-primary-color px-4 rounded-md">
+                Home
+            </button>
+
+            <div class="flex gap-x-2">
+                <img class="h-8 w-8" src="./assets/logo.png" alt="">
+                <p class="my-2">Donate Bangladesh</p>
+            </div>
+
+            <div class="flex gap-x-2">
+                <img class="h-8" src="./assets/coin.png" alt="">
+                <p class="my-1">5500 </p><span class="my-1">BDT</span>
+            </div>
+
+        </nav>
+
+      
+    </header>
+
+    <h1>Important FAQ <i class="fa-regular fa-circle-question"></i></h1>
+
+    <br>
+  
+
+    <div class="join join-vertical w-full px-8">
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" checked="checked" />
+          <div class="collapse-title text-xl font-medium">What is Document Object Model(DOM)?</div>
+          <div class="collapse-content">
+            <p>Document object model is like a tree structure. It allows developers to access elements using javascript.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+          <div class="collapse-content">
+            <p>I can select by using id, query selector and class.</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow join-item border-base-300 border">
+          <input type="radio" name="my-accordion-4" />
+          <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM and why it's useful?</div>
+          <div class="collapse-content">
+            <p>
+                Event delegation is a technique in the DOM where a single event listener is added to a parent element instead of multiple listeners on individual child elements.It's useful for managing dynamic content, as it automatically applies to new child elements added to the parent without needing to reassign listeners.</p>
+          </div>
+
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" />
+            <div class="collapse-title text-xl font-medium">How do you manpulate an elements attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>I can manipulate elements attributes by using se attribute, element.style.property name and adding class name.</p>
+            </div>
+
+        </div>
+      </div>
+   
+    <!-- End of vlog page  -->
+</body>
+</html>

@@ -1,1 +1,3 @@
-console.log("HEllo start");
+function blogPage (){
+    
+}
